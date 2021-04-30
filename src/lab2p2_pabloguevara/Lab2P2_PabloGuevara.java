@@ -17,6 +17,8 @@ public class Lab2P2_PabloGuevara {
             System.out.println("3.Eliminar computadoras");
             System.out.println("4.Modificar computadora");
             System.out.println("5.Informe 1");
+            System.out.println("6.Informe 2");
+            System.out.println("7.Informe 3");
             System.out.println("8.Salir");
             System.out.println("Ingrese su opción: ");
             opcion = leer.nextInt();
@@ -373,7 +375,7 @@ public class Lab2P2_PabloGuevara {
   
                     break;
                 default:
-                    System.out.println("La opción elegida no es válida");
+
                     break;
             }
         }

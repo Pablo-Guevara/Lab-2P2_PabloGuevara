@@ -11,9 +11,23 @@ public class computadoras {
     private String TipoProcesador;
     private String tarjetaGrafica;
     private String sistemaOperativo;
-    private Date tiempoFabricacion;
+    private float tiempoFabricacion;
     private float capBateria;
     private float duracionBateria;
+
+    public computadoras(String modelo, long NumSerie, float CapHDD, float tamPantalla, String tecladoNum, String TipoProcesador, String tarjetaGrafica, String sistemaOperativo, float tiempoFabricacion, float capBateria, float duracionBateria) {
+        this.modelo = modelo;
+        this.NumSerie = NumSerie;
+        this.CapHDD = CapHDD;
+        this.tamPantalla = tamPantalla;
+        this.tecladoNum = tecladoNum;
+        this.TipoProcesador = TipoProcesador;
+        this.tarjetaGrafica = tarjetaGrafica;
+        this.sistemaOperativo = sistemaOperativo;
+        this.tiempoFabricacion = tiempoFabricacion;
+        this.capBateria = capBateria;
+        this.duracionBateria = duracionBateria;
+    }
 
     public String getModelo() {
         return modelo;
@@ -79,11 +93,11 @@ public class computadoras {
         this.sistemaOperativo = sistemaOperativo;
     }
 
-    public Date getTiempoFabricacion() {
+    public float getTiempoFabricacion() {
         return tiempoFabricacion;
     }
 
-    public void setTiempoFabricacion(Date tiempoFabricacion) {
+    public void setTiempoFabricacion(float tiempoFabricacion) {
         this.tiempoFabricacion = tiempoFabricacion;
     }
 

@@ -325,54 +325,54 @@ public class Lab2P2_PabloGuevara {
                     for (Object t : listaComputadoras) {
                         if (t instanceof computadoras) {
                             for (int i = 0; i < listaComputadoras.size(); i++) {
-                        computadoras compuGamers = listaComputadoras.get(i);
+                                computadoras compuGamers = listaComputadoras.get(i);
 
-                        if (compuGamers.getTarjetaGrafica().equals("Gamer") && compuGamers.getTamPantalla()>17.0 && compuGamers.getTecladoNum().equals("Si")) {
-                            System.out.println(compuGamers);
+                                if (compuGamers.getTarjetaGrafica().equals("Gamer") && compuGamers.getTamPantalla() > 17.0 && compuGamers.getTecladoNum().equals("Si")) {
+                                    System.out.println(compuGamers);
 
+                                }
+
+                            }
                         }
-                      
                     }
-                        }
-                    }
- 
+
                     break;
-                    case 6:
+                case 6:
                     System.out.println("COMPUTADORAS EDUCATIVAS");
- 
+
                     for (Object t : listaComputadoras) {
                         if (t instanceof computadoras) {
                             for (int i = 0; i < listaComputadoras.size(); i++) {
-                        computadoras compuEducativa = listaComputadoras.get(i);
+                                computadoras compuEducativa = listaComputadoras.get(i);
 
-                        if (compuEducativa.getCapHDD()<300 && compuEducativa.getSistemaOperativo().equals("ChromeOS") && compuEducativa.getTamPantalla()<12) {
-                            System.out.println(compuEducativa);
+                                if (compuEducativa.getCapHDD() < 300 && compuEducativa.getSistemaOperativo().equals("ChromeOS") && compuEducativa.getTamPantalla() < 12) {
+                                    System.out.println(compuEducativa);
 
+                                }
+
+                            }
                         }
-                      
                     }
-                        }
-                    }
-   
+
                     break;
-                    
-                    case 7:
+
+                case 7:
                     System.out.println("COMPUTADORAS DE POCO USO");
- 
+
                     for (Object t : listaComputadoras) {
                         if (t instanceof computadoras) {
                             for (int i = 0; i < listaComputadoras.size(); i++) {
-                        computadoras compPocoUso = listaComputadoras.get(i);
+                                computadoras compPocoUso = listaComputadoras.get(i);
 
-                        if (compPocoUso.getTiempoFabricacion()>2 && compPocoUso.getDuracionBateria()<1 && compPocoUso.getSistemaOperativo().equals("Windows")) {
-                            System.out.println(compPocoUso);
+                                if (compPocoUso.getTiempoFabricacion() > 2 && compPocoUso.getDuracionBateria() < 1 && compPocoUso.getSistemaOperativo().equals("Windows")) {
+                                    System.out.println(compPocoUso);
 
+                                }
+
+                            }
                         }
-                      
                     }
-                        }
-                    }
-  
+
                     break;
                 default:
 

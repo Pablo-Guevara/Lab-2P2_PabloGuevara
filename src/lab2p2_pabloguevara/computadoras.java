@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class computadoras {
     private String modelo;
-    private long NumSerie;
+    private int NumSerie;
     private float CapHDD;
     private float tamPantalla;
     private String tecladoNum;
@@ -15,7 +15,7 @@ public class computadoras {
     private float capBateria;
     private float duracionBateria;
 
-    public computadoras(String modelo, long NumSerie, float CapHDD, float tamPantalla, String tecladoNum, String TipoProcesador, String tarjetaGrafica, String sistemaOperativo, float tiempoFabricacion, float capBateria, float duracionBateria) {
+    public computadoras(String modelo, int NumSerie, float CapHDD, float tamPantalla, String tecladoNum, String TipoProcesador, String tarjetaGrafica, String sistemaOperativo, float tiempoFabricacion, float capBateria, float duracionBateria) {
         this.modelo = modelo;
         this.NumSerie = NumSerie;
         this.CapHDD = CapHDD;
@@ -37,11 +37,11 @@ public class computadoras {
         this.modelo = modelo;
     }
 
-    public long getNumSerie() {
+    public int getNumSerie() {
         return NumSerie;
     }
 
-    public void setNumSerie(long NumSerie) {
+    public void setNumSerie(int NumSerie) {
         this.NumSerie = NumSerie;
     }
 
@@ -115,6 +115,11 @@ public class computadoras {
 
     public void setDuracionBateria(float duracionBateria) {
         this.duracionBateria = duracionBateria;
+    }
+
+    @Override
+    public String toString() {
+        return "Computadoras{" + "modelo=" + modelo + ", NumSerie=" + NumSerie + ", CapHDD=" + CapHDD + ", tamPantalla=" + tamPantalla + ", tecladoNum=" + tecladoNum + ", TipoProcesador=" + TipoProcesador + ", tarjetaGrafica=" + tarjetaGrafica + ", sistemaOperativo=" + sistemaOperativo + ", tiempoFabricacion=" + tiempoFabricacion + ", capBateria=" + capBateria + ", duracionBateria=" + duracionBateria + '}';
     }
     
     

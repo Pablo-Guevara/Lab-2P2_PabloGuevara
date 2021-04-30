@@ -119,7 +119,7 @@ public class computadoras {
 
     @Override
     public String toString() {
-        return "Computadoras{" + "modelo=" + modelo + ", NumSerie=" + NumSerie + ", CapHDD=" + CapHDD + ", tamPantalla=" + tamPantalla + ", tecladoNum=" + tecladoNum + ", TipoProcesador=" + TipoProcesador + ", tarjetaGrafica=" + tarjetaGrafica + ", sistemaOperativo=" + sistemaOperativo + ", tiempoFabricacion=" + tiempoFabricacion + ", capBateria=" + capBateria + ", duracionBateria=" + duracionBateria + '}';
+        return "Computadoras{" + "modelo=" + modelo + ", NumSerie=" + NumSerie + ", CapHDD=" + CapHDD + ", tamPantalla=" + tamPantalla + ", tecladoNum=" + tecladoNum + ", TipoProcesador=" + TipoProcesador + ", tarjetaGrafica=" + tarjetaGrafica + ", sistemaOperativo=" + sistemaOperativo + ", tiempoFabricacion=" + tiempoFabricacion + ", capBateria=" + capBateria +" miliamperes"+ ", duracionBateria=" + duracionBateria + '}';
     }
     
     

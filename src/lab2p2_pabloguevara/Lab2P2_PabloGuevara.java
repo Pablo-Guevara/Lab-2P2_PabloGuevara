@@ -10,12 +10,14 @@ public class Lab2P2_PabloGuevara {
         Scanner leer = new Scanner(System.in);
         int opcion = 0;
 
-        while (opcion != 5) {
+        while (opcion != 8) {
             System.out.println("----MENU----");
             System.out.println("1.Crear computadora");
             System.out.println("2.Listar computadoras");
             System.out.println("3.Eliminar computadoras");
             System.out.println("4.Modificar computadora");
+            System.out.println("5.Informe 1");
+            System.out.println("8.Salir");
             System.out.println("Ingrese su opción: ");
             opcion = leer.nextInt();
             switch (opcion) {
@@ -314,6 +316,61 @@ public class Lab2P2_PabloGuevara {
                         }
                         //////FIN 10
                     }
+                    break;
+                case 5:
+                    System.out.println("COMPUTADORAS GAMERS");
+                    String salida2 = "";
+                    for (Object t : listaComputadoras) {
+                        if (t instanceof computadoras) {
+                            for (int i = 0; i < listaComputadoras.size(); i++) {
+                        computadoras compuGamers = listaComputadoras.get(i);
+
+                        if (compuGamers.getTarjetaGrafica().equals("Gamer") && compuGamers.getTamPantalla()>17.0 && compuGamers.getTecladoNum().equals("Si")) {
+                            System.out.println(compuGamers);
+
+                        }
+                      
+                    }
+                        }
+                    }
+ 
+                    break;
+                    case 6:
+                    System.out.println("COMPUTADORAS EDUCATIVAS");
+ 
+                    for (Object t : listaComputadoras) {
+                        if (t instanceof computadoras) {
+                            for (int i = 0; i < listaComputadoras.size(); i++) {
+                        computadoras compuEducativa = listaComputadoras.get(i);
+
+                        if (compuEducativa.getCapHDD()<300 && compuEducativa.getSistemaOperativo().equals("ChromeOS") && compuEducativa.getTamPantalla()<12) {
+                            System.out.println(compuEducativa);
+
+                        }
+                      
+                    }
+                        }
+                    }
+   
+                    break;
+                    
+                    case 7:
+                    System.out.println("COMPUTADORAS DE POCO USO");
+ 
+                    for (Object t : listaComputadoras) {
+                        if (t instanceof computadoras) {
+                            for (int i = 0; i < listaComputadoras.size(); i++) {
+                        computadoras compPocoUso = listaComputadoras.get(i);
+
+                        if (compPocoUso.getTiempoFabricacion()>2 && compPocoUso.getDuracionBateria()<1 && compPocoUso.getSistemaOperativo().equals("Windows")) {
+                            System.out.println(compPocoUso);
+
+                        }
+                      
+                    }
+                        }
+                    }
+  
                     break;
                 default:
                     System.out.println("La opción elegida no es válida");
